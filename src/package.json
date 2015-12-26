@@ -1,4 +1,27 @@
 {
   "name": "auto-design-pattern",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "main": "index.html",
+  "window": {
+    "frame": false,
+    "toolbar": false
+  },
+  "platformOverrides": {
+    "win": {
+      "window": {
+        "toolbar": false
+      }
+    },
+    "win32": {
+      "window": {
+        "frame": true,
+        "toolbar": false
+      }
+    },
+    "win64": {
+      "window": {
+        "frame": true
+      }
+    }
+  }
 }
