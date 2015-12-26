@@ -3,3 +3,20 @@
 body{
     background-color: #23232e;
 }
+
+.container{
+    position:fixed;
+    top: 50%;
+    left: 8%;
+}
+
+
+#dropZone {
+    border: 2px dashed #bbb;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 50px;
+    text-align: center;
+    font: 21pt bold arial;
+    color: #bbb;
+}
