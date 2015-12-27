@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App">
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="libs/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Css/index_styles.css">
+<script type="text/javascript" href="libs/angular-1.4.8/angular-route.min.js"></script>
+    <script type="text/javascript" src="libs/angular-1.4.8/angular.js"></script>
 </head>
 <body>
+<!-- Carregador de arquivos -->
+<div ng-controller="MainCtrl" class="container">
+    <input type="file" on-read-file="showContent($fileContent)" />
+    <div ng-if="content">
+        <h2>File content is:</h2>
+        <div class="container"><pre>{{ content }}</pre></div>
+    </div>
+</div>
 
+
+<!-- -->
+
+<!--
+Bibliotecas e Scripts a serem carregados
+-->
+<script type="text/javascript" src="Js/app.js"></script>
+<script type="text/javascript" src="Js/controllers.js"></script>
+<script type="text/javascript" src="Js/directives.js"></script>
+<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Js/script.js"></script>
 </body>
 </html>
