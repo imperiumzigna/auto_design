@@ -10,18 +10,22 @@
     <script type="text/javascript" src="libs/angular-1.4.8/angular.js"></script>
 </head>
 <body>
-<!-- Carregador de arquivos -->
-<div ng-controller="MainCtrl" class="container">
+<nav id="leftMenu" class="navbar-left">
+
+</nav>
+
+<div class="row">
+    <!-- Carregador de arquivos -->
+    <div ng-controller="MainCtrl" class="container">
     <input type="file" on-read-file="showContent($fileContent)" />
     <div ng-if="content">
-        <h2>File content is:</h2>
-        <div class="container"><pre>{{ content }}</pre></div>
+        <div class="container">
+            <pre>{{ content }}</pre>
+        </div>
     </div>
+    </div>
+
 </div>
-
-
-<!-- -->
-
 <!--
 Bibliotecas e Scripts a serem carregados
 -->

@@ -5,10 +5,6 @@
  *
  *
  *
- *
- *
- *
- *
  * */
 app.directive('onReadFile', function ($parse) {
     return {
